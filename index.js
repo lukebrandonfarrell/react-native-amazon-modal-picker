@@ -1,12 +1,13 @@
 import React from 'react';
 import { View, TouchableOpacity, ScrollView, StyleSheet, Text } from 'react-native';
+import PropTypes from 'prop-types';
 import Modal from 'react-native-modal';
 
 class ModalSelector extends React.Component {
   select(i){
     const { labels, values, onSelect } = this.props;
 
-    if(!_.isEmpty(values)){
+    if(values){
       onSelect(values[i]);
     }else {
       onSelect(labels[i]);
@@ -14,13 +15,13 @@ class ModalSelector extends React.Component {
   }
 
   render() {
-    const { title, labels, values } = this.props;
+    const { isVisible, title, labels, values, headerColor } = this.props;
 
     return (
-      <Modal isVisible={this.props.visible} style={ styles.modalStyle }>
+      <Modal isVisible={isVisible} style={ styles.modalStyle }>
         <View style={{ flex: 1 }}>
-          <View style={ styles.titleStyle }>
-            <Text style={[ material.title, styles.titleTextStyle ]}>{ this.props.title }</Text>
+          <View style={[ styles.titleStyle, { backgroundColor: headerColor } ]}>
+            <Text style={[ styles.titleTextStyle ]}>{ this.props.title }</Text>
           </View>
 
           <ScrollView style={{ flex: 1 }}>
@@ -44,6 +45,23 @@ class ModalSelector extends React.Component {
   }
 }
 
+ModalSelector.defaultProps = {
+  isVisible: false,
+  title: 'Select',
+  labels: null,
+  values: null,
+  headerColor: '#CD2C2E',
+};
+
+ModalSelector.propTypes = {
+  isVisible: PropTypes.bool,
+  title: PropTypes.string,
+  labels: PropTypes.array,
+  values: PropTypes.array,
+  onSelect: PropTypes.func,
+  headerColor: PropTypes.string,
+};
+
 const styles =  StyleSheet.create({
   modalStyle: {
     backgroundColor: 'white',
@@ -53,10 +71,15 @@ const styles =  StyleSheet.create({
   },
   titleStyle: {
     padding: 15,
-    backgroundColor: '#CD2C2E',
   },
   titleTextStyle : {
     color: 'white',
+    backgroundColor : 'transparent',
+    fontFamily: 'System',
+    fontSize: 20,
+    fontWeight: '600',
+    letterSpacing: 0.361328,
+    lineHeight:28,
   },
   labelContainerStyle: {
     borderBottomColor: '#ececec',

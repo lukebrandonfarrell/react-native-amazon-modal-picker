@@ -6,10 +6,12 @@
     "react-native",
     "modal",
     "select",
+    "picker",
     "selection modal",
     "amazon style",
     "react-native-select",
     "react-native-modal",
+    "react-native-picker"
   ],
   "repository": {
     "type": "git",
