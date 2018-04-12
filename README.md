@@ -4,10 +4,10 @@
 [![npm licence](http://img.shields.io/npm/l/react-native-amazon-modal-picker.svg?style=flat-square)](https://npmjs.org/package/react-native-amazon-modal-picker)
 [![npm downloads](http://img.shields.io/npm/dt/react-native-amazon-modal-picker.svg?style=flat-square)](https://npmjs.org/package/react-native-amazon-modal-picker)
 
-React Native selection modal inspired by Amazons mobile application modal style.
+React Native selection modal inspired by Amazon's mobile application modal.
 
-<img align="left" src="https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-amazon-modal-picker/IMG-0450.jpg" width="350" />
-<img src="https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-amazon-modal-picker/modal.gif" width="350" />
+<img align="left" src="https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-amazon-modal-picker/IMG-0450.jpg" width="48%" />
+<img src="https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-amazon-modal-picker/modal.gif" width="48%" />
 
 ## Install
 
@@ -45,6 +45,10 @@ Then add it to your code:
 | labels          | array         | No        |                      | Array of labels to render in modal                                                      |
 | values          | array         | Yes       |                      | Custom values to pass to onSelect when item is clicked. Must be equal length to labels  |
 | headerColor     | string        | Yes       | '#CD2C2E'            | Colour of header                                                                        |
+
+## Todo
+
+- [ ] Use ListView to render items in modal instead of ScrollView
 
 ## Contributing
 
