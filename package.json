@@ -1,7 +1,7 @@
 {
   "name": "react-native-amazon-modal-picker",
   "version": "1.0.0",
-  "description": "Amazon inspired selection modal for React Native",
+  "description": "Amazon style inspired selection modal for React Native",
   "keywords": [
     "react-native",
     "modal",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LukeBrandonFarrell/react-native-images-collage.git"
+    "url": "git+https://github.com/LukeBrandonFarrell/react-native-amazon-modal-picker.git"
   },
   "main": "index.js",
   "scripts": {
