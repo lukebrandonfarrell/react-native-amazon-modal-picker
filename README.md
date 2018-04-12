@@ -6,8 +6,8 @@
 
 React Native selection modal inspired by Amazons mobile application modal style.
 
-![Amazon](https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-amazon-modal-picker/IMG-0450.jpg)
-![Preview](https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-amazon-modal-picker/modal.gif)
+<img src="https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-amazon-modal-picker/IMG-0450.jpg" width="200" />
+<img src="https://raw.githubusercontent.com/LukeBrandonFarrell/open-source-images/master/react-native-amazon-modal-picker/modal.gif" width="200" />
 
 ## Install
 
